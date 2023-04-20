@@ -1,0 +1,150 @@
+body{
+    transition: background-image, 2s;
+}
+
+#barra, footer{
+    transition: background-color, 2s;
+}
+
+.portada{
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+.sombra{
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.sombraGradiente{
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+    transform: rotate(-180deg);
+}
+
+.logo{
+    position: absolute;
+    width: 712px;
+    height: 169px;
+    left: 450px;
+    top: 250px;
+    z-index: 1;
+    transition: opacity 0.3s;
+}
+
+/* Portada 2 */
+
+.contenedor2{
+    position: absolute;
+    width: 47%;
+    margin-left: 53%;
+    height: 700px;
+    z-index: 4;
+    transition: margin-left 0.5s;
+}
+
+.contenedor2:hover .portada2{
+    opacity: 100%;
+}
+
+.contenedor2:hover{
+    margin-left: 50.65%;
+}
+
+.portada2{
+    width: 100%;
+    height: 700px;
+    opacity: 0%;
+    transition: width 1s, opacity 0.3s;
+}
+
+.contenedor2 .logo{
+    opacity: 0%;
+    position: absolute;
+    width: 612px;
+    height: 150px;
+    left: 75px;
+    top: 250px;
+    z-index: 1;
+}
+
+.contenedor2:hover .logo{
+    opacity: 100%;
+}
+
+/* Portada 1 */
+
+.portada1{
+    width: 100%;
+    height: 700px;
+    opacity: 0%;
+    transition: width 1s, opacity 0.5s, margin-left 0.5s;
+}
+
+.contenedor1{
+    position: absolute;
+    width: 53%;
+    height: 700px;
+    z-index: 4;
+}
+
+.contenedor1:hover .portada1{
+    opacity: 100%;
+    margin-left: 35px;
+}
+
+.contenedor1 > h2{
+    font-size: 0;
+}
+
+.contenedor1 .logo{
+    opacity: 0%;
+    position: absolute;
+    width: 612px;
+    height: 120px;
+    left: 75px;
+    top: 250px;
+    z-index: 1;
+}
+
+.contenedor1:hover .logo{
+    opacity: 100%;
+}
+
+/* Temporadas Hover */
+
+.temporada{
+    transition-property: background-image;
+    transition-duration: 3s;
+}
+
+/* Animaciones heredadas */
+.grow{
+    transition: .5s, color .10s;
+}
+.grow:hover{
+    transform: scale3d(1.1, 1, 0.1);
+}
+       
+.transUp{
+    transition: .5s, color .10s;
+}
+.transUp:hover{
+    transform: translatey(-20px);
+}
+
+              
